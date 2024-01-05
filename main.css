@@ -1,0 +1,59 @@
+header {
+    padding: 3% 0;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(3, 2, 77);
+}
+
+a:hover { /* Altera a cor para vermelho quando o mouse passa por cima */
+    color: red; 
+}
+
+.h5 {
+    color: rgb(3, 2, 77);
+}
+
+.texto {
+    margin-top: 10px;
+    color: rgb(59, 59, 59);
+}
+
+.secao-perguntas {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+form {
+    margin-bottom: 100px;
+}
+
+textarea { /*impedindo o user de manipular o textarea*/
+    resize: none;
+}
+
+.form-check {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) { /*Criar um melhor posicionamento para dispositivos mobile*/
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+    header ul {
+        margin-top: 20px;
+        margin-left: 0; /* Remove a margem esquerda */
+        padding-left: 0; /* Remove o padding esquerda, se houver */
+    }
+}
